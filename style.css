@@ -1,0 +1,190 @@
+/*
+Theme Name: Fast Blue
+Theme URI: http://www.perun.net
+Description: Vladimir Simović
+Version: 1.0.1
+Author: Vladimir Simović
+Author URI: https://www.vladimir-simovic.de
+
+ * Allgemeine Formatierungen * */
+body {
+    font: 100% cambria, times, 'times new roman', serif;
+    text-align: center;
+    color: #444;
+    margin: 0; padding: 0;}
+
+blockquote {background: #eee; border-left: .5rem solid #08a; padding: .5rem;}
+table {border: 1px solid #ddd; border-collapse: collapse;}
+th {background: #08a; color: #fff;} th, td {border: 1px solid #ddd; padding: 2px 5px;}
+th:hover, td:hover {background: #eee; color: #444;}
+pre, code {font: 1rem consolas, monospace; color:#b06;}
+.quelltext, pre, .hinweis {background: #f3f3f3; padding: .5rem; border: 1px solid #ddd; overflow: auto;}
+dfn {border-bottom: 1px dotted #999; cursor: help;}
+
+.transparent {visibility: hidden;}
+
+/**
+* Runde Ecken
+*/
+pre, .quelltext, .hinweis, blockquote, .more-link {border-radius: 3px;}
+
+/**
+* Die einzelnen Bereiche
+*/
+figure, aside, section, nav {margin: 0; padding: 0;}
+
+/**
+* Zusammenfassende Angabe zur Breite und dem inneren Abstand
+*/
+h1, #container, footer {min-width: 20rem; max-width: 60.25rem; padding: 0 .5rem;}
+
+header {background: #08a; color: #fff; text-align: left; padding: 2rem 0;}
+    h1  {font-size: 2rem; margin: 0 auto; min-width: 20rem; max-width: 60.25rem; padding: 0 .5rem;}
+    h1 a {color: #fff; text-decoration: none;} h1 a:hover {color: #fff;}
+
+nav {background: #ccc; padding: 0;}
+    .navi {margin: 0 auto; padding: 0; list-style: none; text-align: left; min-width: 20rem; max-width: 60.25rem;}
+        .navi li {/*display: table-cell;*/ display: inline-block; margin: 0 -4px 0 0;}
+            .navi a {color: #444; display: block; text-decoration: none; -webkit-transition: .75s; transition: .75s; text-transform: uppercase;  padding: 1rem 1.25rem;}
+            .navi a:hover {background: #eee; color: #08a; /*text-shadow: 0 0 1.25rem #fff;*/}
+            .navi .aktiv, a.aktiv:hover, .blog .blog-link, .single .blog-link, .home .startseiten-link {background: #fff;}
+
+h1, h2, h3, h4 {font-weight: normal;}
+
+h2 {font-size: 1.5rem; margin: 1.625rem 0 .125rem 0;}
+    h2:first-child {margin-top: 0;}
+h3 {font-size: 1.25rem; margin: 1.5rem 0 .25rem 0;}
+
+p {margin: .5rem 0 1.25rem 0;}
+
+/**
+* Verweise bzw. Links
+*/
+a               {color: #08a;}
+a:hover         {color: #111;}
+.storytitle a   {text-decoration: none;}
+
+#container {
+    text-align: left; margin: 2em auto;
+    font-size: 1.0625em; line-height: 1.45;}
+
+    .linker-bereich {max-width: 36.25rem; float: left; margin-right: 4rem; margin-bottom: 3rem;}
+
+    aside {float: left; max-width: 20rem; padding-top: .25rem;}
+        h3:first-child {margin-top: -.25rem;}
+
+        ul {padding-left: 0; margin-left: 1.25rem; margin-top: .625rem; margin-bottom: 1rem;}
+        li {margin-top: 6px;}
+        /*li:first-child {margin-top: 0;}*/
+
+        .paginierung                {margin: 1px 0 2rem 0; max-width: 20rem; min-height: 1.5rem;}
+        .paginierung a              {background: #08a; color: #fff; display: inline-block; font-size: .875rem; padding: 2px .375rem; text-decoration: none; float: left;}
+        .paginierung a:hover        {background: #ddd; color: #444;}
+        .paginierung a[rel="next"]  {float: right;}
+
+footer {clear: both; border-top: 1px solid #ddd; text-align: center;}
+
+/**
+* Inhaltsbereich
+*/
+.beitragsinfo {font-size: .875rem; color: #888;}
+
+.storytitle {border-top: 1px solid #ddd; padding-top: 1rem; margin-top: 2rem;}
+.storytitle:first-child {border-top: none; padding-top: 0; margin-top: 0; line-height: 1.1;}
+h2 code {font-size: .9166em;}
+
+.more-link          {padding: 0 .5rem 1px .5rem; background: #08a; color: #fff; text-decoration: none;}
+.more-link:hover    {background: #eee; color: #444;}
+
+
+/**
+* Kommentarbereich
+*/
+label {display: block;}
+textarea {width: 99%; min-height: 7rem;}
+.form-allowed-tags, .form-allowed-tags code, .commentmetadata {font-size: .875rem;}
+.comment-list, .children {list-style: none; margin-left: 0;}
+.comment-list {padding-left: 0;}
+.avatar {float: left; margin-right: 1rem; margin-top: 5px;}
+.comment-body {margin-bottom: 1.25rem; border-bottom: 1px solid #ddd; padding-bottom: .5rem;}
+.reply {text-align: right;}
+
+/**
+* Bilder, Galerien, Anhänge
+*/
+.inhalt .aligncenter {display: block; margin-left: auto; margin-right: auto; text-align: center;}
+.inhalt .alignleft {float: left; margin: 5px 10px 5px 0;}
+.inhalt .alignright {float: right; margin: 5px 0 5px 10px;}
+
+.inhalt .wp-caption {text-align: center; background: #eee; border: 1px solid #ddd; padding: 11px 9px 9px 9px; margin-top: 4px; margin-bottom: 12px;}
+.inhalt .wp-caption img {margin: 0; padding: 0; border: 1px solid #ddd;}
+.wp-caption a, .wp-caption a:hover, .galerie a, .galerie a:hover {border: none !important;}
+.inhalt .wp-caption p.wp-caption-text {font-size: 11px; line-height: 17px; margin: 0; padding-top: 5px;}
+
+.aligncenter {margin-top: 7px !important;}
+.galerie {margin-top: 1em;}
+
+.attachment-medium, .attachment-thumbnail {padding: 14px; background: #eee; border: 1px solid #ddd;}
+.attachment-thumbnail {padding: 7px;}
+.inhalt .abstand-unten {margin-bottom: 12px;/* zusaetzlicher Abstand */}
+
+/**
+* Icons
+*/
+.icon {font-family: Genericons; display: inline-block; vertical-align: top; margin-right: 5px; opacity: .9;}
+body.blog .icon, body.single .icon {vertical-align: sub;}
+.css:before {content: '\f462'; font-size: 25px;}
+.wordpress:before {content: '\f205';}
+.buch:before {content: '\f444';}
+.blogger:before {content: '\f413';}
+.firma:before {content: '\f425';}
+.selbstverleger:before {content: '\f453';}
+.hierarchie:before {content: '\f505';}
+
+.schnellinfo:before {content: '\f455'; font-size: 1.3125rem;}
+.anheuern:before {content: '\f509'; font-size: 1.3125rem;}
+
+.artikelzeit:before {content: '\f303'; font-size: 1rem; margin-right: 1px;}
+.kommentare:before {content: '\f108'; font-size: 1rem; margin-right: 1px;}
+
+.tags {margin-left: 1.25rem;}
+.kategorien:before {content: '\f301'; font-size: 1.25rem; margin-right: 1px;}
+.tags:before {content: '\f302'; font-size: 1.25rem; margin-right: 1px;}
+
+.comment-reply-link:before {content: '\f412'; font-family: Genericons; display: inline-block; vertical-align: top; margin-right: 5px;}
+.bypostauthor .fn:before {content: '\f408'; font-family: Genericons; display: inline-block; vertical-align: top; margin-right: 5px;}
+
+/* Dynamische Social Buttons */
+.weiterempfehlen {margin: 1.5rem 0; min-height: 70px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.weiterempfehlen p {font-weight: bold; margin-bottom: .25rem;}
+.shariff ul li {margin: 0 12px 7px 0 !important; font-size: .9rem;}
+
+/**
+* Media-Queries
+*/
+@media (max-width: 979px) {
+    h1                  {margin-left: 1rem;}
+    .linker-bereich     {float: none; margin-right: 1rem; max-width: 60.25rem;}
+    section, aside      {float: none; margin-left: 1rem;}
+    .kommentarbereich   {border-bottom: 1px solid #ddd; margin-bottom: 2rem; padding-bottom: 2rem;}
+    .navi               {margin-left: 1.5rem;}
+    figure              {position: static;}
+    figure:before,
+    figure:after        {display: none;}
+    pre, .quelltext     {white-space: pre-wrap;}
+ }
+ @media (max-width:620px) {
+    img.alignnone,
+    img.aligncenter     {width: 99%; max-width: 60.25rem; height: auto;}
+}
+@media (max-width:355px) {
+    .sidebar img    {width: 90%; height: auto; max-width: 280px;}
+    aside, footer   {max-width: 290px;}
+    h1, #container,
+    footer, .navi   {min-width: auto;}
+    .inhalt .aligncenter    {margin-left: 0; margin-right: 0; text-align: left; min-width: 100%;}
+    .inhalt .alignnone      {min-width: 100%;}
+    .inhalt .wp-caption     {max-width: 100%;}
+    .inhalt .wp-caption img {max-width: 100%; height: auto;}
+    section, aside      {float: none; margin-left: .5rem;}
+}
